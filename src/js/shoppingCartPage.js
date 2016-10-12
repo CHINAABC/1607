@@ -4,13 +4,9 @@ $(function(){
 	if(getcookie("halloname")){
 		$("#hallo").html(getcookie("halloname")).css("color","red");
 	}
-	//利用cookies，在文档顶部显示购物车中的商品数量
-	//获取cookies，用JSON.parse将其转成对象数组
-	var shopCarNum;
-	if(getcookie("cookie1")){
-		shopCarNum = JSON.parse(getcookie("cookie1"));
-		$(".car_number").html(shopCarNum.length);		
-	}
+
+	var shopCarNum = 0;//存放购物车总数量的变量
+	
 	
 	//获取cookies
 	//用table表格列出购物车中的商品
@@ -29,8 +25,9 @@ $(function(){
 	if(getcookie("cookie1")){
 		goods_data = JSON.parse(getcookie("cookie1"));		
 	}
-	//问题：如果var goods_data = JSON.parse(getcookie("cookie1"));回报错（"Uncaught SyntaxError: Unexpected end of input"）为啥呢？？？
+	//问题：如果var goods_data = JSON.parse(getcookie("cookie1"));会报错（"Uncaught SyntaxError: Unexpected end of input"）为啥呢？？？
 	
+	var totprice = 0;//存放总价格的变量
 	//遍历获取到的cookies
 	$.each(goods_data, function(idx,item) {
 		//创建tr,用来显示cookies中的商品信息
@@ -40,23 +37,39 @@ $(function(){
 		$("<td/>").css({"width":"100px"}).html(item.price).appendTo($tr);
 		$("<td/>").css({"width":"100px","color":"rgb(217,0,0)"}).html(item.price2).appendTo($tr);
 		$("<td/>").css({"width":"169px"}).html(item.goodsNum).appendTo($tr);
-		$("<td/>").css({"width":"100px","color":"red","font-weight":"bold"}).html(item.price2).appendTo($tr);
-		//创建一个a标签，存放“取消订购”，给其添加id,后面点击 “取消订购” 时，会将其所对应的商品删除掉。
-		var $a = $("<a/>").attr({href:"#",id:"remove"}).html("取消订购");
-		$("<td/>").css({"width":"100px","border-right":"none"}).html($a).appendTo($tr);
+		var subtotal = parseInt(item.price2)*parseInt(item.goodsNum);
+		totprice = totprice + subtotal;//计算购物车中总价格
+		shopCarNum = shopCarNum + parseInt(item.goodsNum);//设置购物车中商品数量
+		$("<td/>").css({"width":"100px","color":"red","font-weight":"bold"}).html(subtotal).appendTo($tr);
+		//创建一个td标签,给其添加id,后面点击 “取消订购” 时，会将其所对应的商品删除掉。
+		$("<td/>").css({"width":"100px","border-right":"none"}).html("取消订购").css({"cursor":"pointer"}).addClass("removeDoods").appendTo($tr);
 		//将创建的tr添加到table中，让其能在页面中显示
 		$tr.appendTo("#otab");
 	});
+	//计算购物车中总价格
+	$("#totalPrices").html(totprice);
+	//设置购物车中商品数量
+	$(".car_number").html(shopCarNum);
+	
+	var d = new Date;//新建日期
+	d.setDate(d.getDate() + 365);//设置cookies存放的时间
+	setcookie("shopCarNum",shopCarNum,d,"/");//将shopCarNum存到cookies中
+	
+	//设置折后价格
+	$("#discountPrice").html(0.8*totprice);
+	//用一个随机数来给购买商品获得的积分。
+	var inter = parseInt(Math.random()*200+5);
+	$("#integral").html(inter);
 	
 	//取到清空购物车按钮，添加点击事件
 	$("#null").on("click",function(){
 		//选中购物车中所有商品，将其删除
-		$("#otab tr").eq("0").siblings("tr").empty();	
+		$("#otab tr").eq(0).siblings("tr").empty();	
 	});
 	//取消订购单个商品。取到 “取消订购” 按钮，添加点击事件
-	$("#remove").on("click",function(){
+	$(".removeDoods").on("click",function(){
 		//选中对应的商品并删除。
-		$(this).parents("tr").empty();
+		$(this).closest("tr").empty();
 	});
 	
 });

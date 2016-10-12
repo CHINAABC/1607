@@ -5,12 +5,9 @@ $(function(){
 			$("#hallo").html(sayhallo).css("color","red");
 		}
 	//利用cookies，在文档顶部显示购物车中的商品数量
-	//获取cookies，用JSON.parse将其转成对象数组
-	var shopCarNum = JSON.parse(getcookie("cookie1"));
-	if(shopCarNum){
-		$(".car_number").html(shopCarNum.length);		
+	if(getcookie("shopCarNum")){
+		$(".car_number").html(getcookie("shopCarNum"));		
 	}
-
 
 		//1/懒加载
 //		// 全局配置

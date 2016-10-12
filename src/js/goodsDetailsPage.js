@@ -8,13 +8,9 @@ jQuery(function($){
 		$("#hallo").html(getcookie("halloname")).css("color","red");
 	}
 	//利用cookies，在文档顶部显示购物车中的商品数量
-	//获取cookies，用JSON.parse将其转成对象数组
-	var shopCarNum;
-	if(getcookie("cookie1")){
-		shopCarNum = JSON.parse(getcookie("cookie1"));
-		$(".car_number").html(shopCarNum.length);		
+	if(getcookie("shopCarNum")){
+		$(".car_number").html(getcookie("shopCarNum"));		
 	}
-	
 	//实现加入购物车功能    用cookie方法    当点击立即购买或者加入购物车时就设置cookies
 	//购物车中要显示商品的：商品名称、商品的市场价格、商品在本商城价格、数量等
 	var oshop = document.getElementById("shop");//获取（要加点击事件）存放立即购买的盒子
@@ -24,11 +20,10 @@ jQuery(function($){
 	var obprice = document.getElementById("bprice");//获取存放商品在本商城价格的盒子
 	var ogoodsNum = document.getElementById("goodsNum");//获取购买商品的数量的盒子
 	
-	console.log(ogoodsNum);
 	//定义一个存放cookies的变量
 	var cookie1;
 	
-	//给立即购买添加点击事件
+	//给加入购物车添加点击事件
 	opcar.onclick = function(){
 		var goodsname = oyaya[0].innerHTML;//获取商品名称
 		var goodstprice = otprice.innerHTML;//获取该商品的市场价格
@@ -55,6 +50,7 @@ jQuery(function($){
 	    setcookie("cookie1",JSON.stringify(cookie1),d,"/");
 	}
 	
+	//立即购买按钮
 	oshop.onclick = function(){
 		var goodsname = oyaya[0].innerHTML;//获取商品名称
 		var goodstprice = otprice.innerHTML;//获取该商品的市场价格

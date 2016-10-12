@@ -5,11 +5,8 @@ $(function(){
 		$("#hallo").html(sayhallo).css("color","red");
 	}
 	//利用cookies，在文档顶部显示购物车中的商品数量
-	//获取cookies，用JSON.parse将其转成对象数组
-	var shopCarNum;
-	if(getcookie("cookie1")){
-		shopCarNum = JSON.parse(getcookie("cookie1"));
-		$(".car_number").html(shopCarNum.length);		
+	if(getcookie("shopCarNum")){
+		$(".car_number").html(getcookie("shopCarNum"));		
 	}
 	
 	//调用轮播图插件，给导航栏下的大广告图添加轮播效果
