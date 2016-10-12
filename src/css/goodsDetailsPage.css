@@ -1,0 +1,94 @@
+
+.bigbox{width: 1200px;overflow: hidden;margin: 10px 70px;}
+.leftPage{width: 210px;overflow: hidden;background: white;float: left;}
+.leftPage .topImg{margin: 10px 0;}
+.leftPage .recommendList{width: 210px;height: 32px;color: white;font-size: 14px;line-height: 32px;text-align: center;background: rgb(171,12,6);font-weight: bold;}
+.leftPage .lastList{width: 210px;height: 32px;color: white;font-size: 14px;line-height: 32px;background: rgb(171,12,6);font-weight: bold;padding-left: 10px;}
+.leftPage .lastList span{font-size: 12px;color: white;line-height: 32px;float: right;margin-right: 20px;cursor: pointer;}
+
+.leftPage .different{width: 210px;height: 60px;overflow: hidden;position: relative;border-bottom: 1px solid rgb(230,230,230);}
+.leftPage .different .number{position: absolute;color: red;left: 5px;top: 10px;font-weight: bold;}
+.leftPage .different img{margin-left: 20px;}
+.leftPage .different .name{position: absolute;left: 75px;top: 5px;}
+.leftPage .different .price{position: absolute;left: 75px;top: 40px;color: red;font-weight: bold;}
+
+.leftPage .recommend{width: 210px;height: 40px;line-height: 40px;border-bottom: 1px solid rgb(230,230,230);}
+.leftPage .recommend span{color: red;font-weight: bold;margin: 0 5px;}
+.leftPage ul{margin-bottom: 10px;overflow: hidden;}
+
+.leftPage .iconImg{float: left;}
+.leftPage .iconImg img{width: 105px;height: 35px;}
+
+.leftPage .notes p{height: 30px;line-height: 30px;margin-left: 10px;}
+
+
+.rightPage{width: 980px;float: right;overflow: hidden;background: white;}
+.rightPage .currentPosition{width: 980px;height: 30px;background: rgb(171,12,6);line-height: 30px;color: white;}
+.rightPage .currentPosition a{color: white;}
+.rightPage .abcZoom{width: 960px;height: 353px;padding: 10px;text-align: center;border-bottom: 1px solid rgb(229,229,229);}
+.rightPage .abcZoom .leftZoom{width: 333px;height: 353px;border-right: 1px solid rgb(229,229,229);float: left;}
+.rightPage .abcZoom .leftZoom .about{display: inline-block;margin-top: 10px;}
+
+.xzoom{position:relative;}
+.xzoom .xzoom-min{position:absolute;top:0;left:0;width:100px;height:50px;border:1px solid #fc0;background-color:rgba(255,255,0,0.3)}
+
+.xzoom-big{position:absolute;width:300px;height:300px;overflow:hidden;border: 1px solid black;}
+.xzoom-big img{position:absolute;left:0;top:0;}
+
+.rightPage .abcZoom .rightZoom{width: 610px;height: 353px;padding-left: 10px;float: right;}
+.rightPage .abcZoom .rightZoom .yaya{width: 610px;height: 40px;text-align: center;line-height: 40px;border-bottom: 1px solid rgb(229,229,229);}
+.rightPage .abcZoom .rightZoom .foodsNumber{line-height: 30px;text-align: left;}
+.rightPage .abcZoom .rightZoom .foodsNumber span{color: red;font-size: 14px;font-weight: bold;overflow: hidden;}
+.rightPage .abcZoom .rightZoom .choice{width: 408px;height: 148px;border: 1px solid rgb(229,229,229);padding-left: 8px;text-align: left;}
+.rightPage .abcZoom .rightZoom .choice div{margin-top: 10px;}
+.rightPage .abcZoom .rightZoom .choice .color p,.rightPage .abcZoom .rightZoom .choice .size p{display: inline-block;height: 18px;border: 1px solid rgb(200,201,205);margin: 0 5px;text-align: center;line-height: 18px;cursor: pointer;}
+.rightPage .abcZoom .rightZoom .choice .color p{width: 40px;}
+.rightPage .abcZoom .rightZoom .choice .size p{width: 28px;}
+.rightPage .abcZoom .rightZoom .choice .maimai input{width: 82px;height: 17px;}
+.rightPage .abcZoom .rightZoom .choice .maimai span{color: rgb(152,153,152);}
+.rightPage .abcZoom .rightZoom img{display: inline-block;margin-top: 10px;}
+.rightPage .abcZoom .rightZoom .know,.rightPage .abcZoom .rightZoom .sells{text-align: left;}
+.rightPage .abcZoom .rightZoom .know span{color: rgb(152,153,152);}
+.rightPage .abcZoom .rightZoom .sells img{margin-right: 10px;}
+
+
+.rightPage .assembly{width: 980px;height: 260px;padding-top: 20px;border-bottom: 1px solid rgb(229,229,229);}
+.rightPage .assembly .oldList{width: 980px;overflow: hidden;border-bottom: 2px solid rgb(200,200,200);}
+.rightPage .assembly .oldList li{width: 84px;height: 27px;float: left;font-size: 14px;text-align: center;line-height: 28px;cursor: pointer;}
+.rightPage .assembly .oldList .active{background: rgb(106,106,106);color: white;}
+.rightPage .assembly .goodLeft dl{float: left;width: 130px;height: 200px;margin: 20px 10px;text-align: center;}
+.rightPage .assembly .goodLeft dl dt img{width: 108px;height: 148px;border: 1px solid rgb(229,229,229);margin-left: 10px;}
+.rightPage .assembly .goodLeft dl dd .load{color: rgb(229,229,229);}
+.rightPage .assembly .goodLeft dl dd .load span{color: red;font-weight: bold;}
+
+
+.rightPage .question{width: 980px;overflow: hidden;padding-top: 10px;}
+.rightPage .question .ourList{border-bottom: 2px solid rgb(204,0,0);overflow: hidden;padding-left: 20px;}
+.rightPage .question .ourList li{width: 98px;height: 28px;border: 1px solid rgb(230,230,230);float: left;margin-left: 5px;text-align: center;line-height: 28px;cursor: pointer;font-weight: bold;}
+.rightPage .question .oneLine{width: 980px;overflow: hidden;padding: 20px 0;text-align: center;color: red;}
+.rightPage .question .ourList .comeon{color: white;border: 2px solid rgb(204,0,0);border-bottom: none;background: rgb(204,0,0);}
+
+
+.rightPage .evaluate{width: 980px;height: 295px;border: 1px solid rgb(219,219,219);padding-top: 10px;overflow: hidden;position: relative;}
+.rightPage .evaluate ul{border-bottom: 2px solid rgb(204,0,0);}
+.rightPage .evaluate ul li{width: 100px;height: 30px;background: rgb(204,0,0);margin-left: 20px;text-align: center;line-height: 30px;color: white;}
+.rightPage .evaluate span{display: inline-block;width: 90px;padding-right: 10px;margin-top: 25px;text-align: right;}
+.rightPage .evaluate textarea{width: 480px;height: 100px;border: 1px solid rgb(219,219,219);margin-top: 25px;}
+.rightPage .evaluate input{margin-top: 25px;}
+.rightPage .evaluate .sss{margin-left: 280px;}
+.rightPage .evaluate p{position: absolute;right: 0;bottom: 0;}
+.rightPage .evaluate p button{margin-left: 10px;}
+
+
+.rightPage .orList{width: 980px;height: 380px;padding-top: 20px;}
+.rightPage .orList ul{border-bottom: 2px solid rgb(204,0,0);position: relative;}
+.rightPage .orList ul li{width: 100px;height: 30px;background: rgb(204,0,0);margin-left: 20px;text-align: center;line-height: 30px;color: white;}
+.rightPage .orList ul a{position: absolute;right: 0;bottom: 0;}
+.rightPage .orList .goodLeft{width: 980px;height: 335px;padding-top: 20px;overflow: hidden;}
+.rightPage .orList .goodLeft dl{float: left;margin-left: 20px;}
+
+
+
+
+
+

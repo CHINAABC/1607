@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录注册页</title>
+		<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/landingLoginPage.css"/>
+		<script src="../../js/jquery-1.12.0.js"></script>
+		<script src="../js/cookie.js"></script>
+		<script src="../js/langingLoginPage.js"></script>
+	</head>
+	<body>
+		<!--文档最顶部用户登录栏-->
+		<div class="top_header">
+			<div class="hello">
+				你好：<span id="hallo"></span>,欢迎光临天狗商城！[
+				<a href="langingLoginPage.html">请登录</a>
+				]，新用户？[
+				<a href="langingLoginPage.html">免费注册</a>
+				]
+			</div>
+			<div class="shop">
+				<span class="shoppingcar">
+					<a href="shoppingCartPage.html">购物车<span class="car_number">0</span>件</a>
+				</span>
+				<a class="top_list" href="#">我的订单</a>
+				<a class="top_list" href="#">网站地图</a>
+				<a class="top_list" href="#">帮助中心</a>
+				<a class="top_list" href="#">加入收藏</a>
+				<a class="top_list" id="no_border" href="#">设为首页</a>
+			</div>
+		</div>
+		<!--logo和搜索栏-->
+		<div class="logo">
+			<a class="logo_img" href="#"><img src="../img/p201401211350199562.jpg"/></a>
+			<div class="right_search">
+				<span>商品</span>
+				<div class="search_frame">
+					<div class="sousuo">
+						<img src="../img/sousuo.jpg"/>
+						<input type="text" value="多搜搜，意外惊喜等你拿" />
+					</div>
+					<input class="btn" type="button" value="搜          索" />
+					<a href="#">手机/</a>
+					<a href="#">钟表/</a>
+					<a href="#">家电/</a>
+					<a href="#">电脑/</a>
+					<a href="#">男装/</a>
+					<a href="#">女装/</a>
+					<a href="#">灯具/</a>
+					<a href="#">童装/</a>
+					<a href="#">儿童玩具/</a>
+					<a href="#">笔记本/</a>
+					<a href="#">平板/</a>
+					<a href="#">相机/</a>
+					<a href="#">鞋</a>
+				</div>
+			</div>
+		</div>
+		<!--导航栏nav-->
+		<div class="nav">
+			<div class="allclassify">所有商品分类</div>
+			<ul class="navlist">
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="listPage.html">手机数码</a></li>
+				<li><a href="listPage.html">礼品箱包</a></li>
+				<li><a href="listPage.html">厨具用品</a></li>
+				<li><a href="listPage.html">电脑办公</a></li>
+				<li><a href="listPage.html">服饰鞋帽</a></li>
+				<li><a href="listPage.html">个护化妆</a></li>
+				<li><a href="listPage.html">母婴用品</a></li>
+			</ul>
+			<dl class="right_nav">
+				<dt><a href="#"><img src="../img/hot_img.jpg"/></a><a class="nav_right" href="#">分销</a></dt>
+				<dt><a href="#"><img src="../img/new_img.jpg"/></a><a class="nav_right" href="#">导航</a></dt>
+				<dt><a href="#"><img src="../img/diy_img.jpg"/></a><a class="nav_right" href="#">团购</a></dt>
+				<dt><a href="#"><img src="../img/go_img.jpg"/></a><a class="nav_right" href="#">充值</a></dt>
+			</dl>
+		</div>
+		<!--导航栏下的深红色填充栏-->
+		<div class="nav_next">
+			<div class="coler"></div>
+		</div>
+		<!--登录  和  注册  两个部分-->
+		<div class="denglu_zhuce">
+			<!--左边的注册框-->
+			<div class="left_zhuce" id="register">
+				<form action="" method="post">
+					<p>新用户，请注册<span>(仅需30秒)</span></p>
+					<span class="fire">Email:</span><input type="text" value="" /><span class="bold">请输入邮箱</span><br />
+					<span class="fire">用户名:</span><input type="text" value="" /><span class="bold">4-20英文字符、数字、“_”的组合。</span><br />
+					<span class="fire">密码:</span><input type="password" value="" /><span class="bold">请输入密码</span><br />
+					<span class="fire">确认密码:</span><input type="password" value="" /><span class="bold">请输入重复密码</span><br />
+					<span class="fire">验证码:</span><input class="aCode" type="text" value="" /><input type="text" class="authCode" value="" /><br />
+					<input class="subb1" type="submit" value="注册"/>
+				</form>
+			</div>
+			<!--右边的登录框-->
+			<div class="right_denglu" id="cooker">
+				<p>老用户，请登录</p>
+				<form id="jump" action=""  method="post">	
+				<span class="fire">用户名:</span><input type="text" value="" /><br />
+				<span class="fire">密码:</span><input type="password" value="" /><a href="#">忘记密码？</a><br />
+				<input class="subb2" type="submit" value="我要登录"/>
+				</form>
+			</div>
+		</div>
+
+		<!--文档底部-->
+		<div class="footer">
+			<div class="friend_link">
+				<h3>友情链接：</h3>
+				<a href="#">天狗网商城</a>
+				<a href="#">介休市弘盛昌家具建材装饰城</a>
+				<a href="#">天狗网科技有限公司</a>
+				<a href="#">天狗网上商城</a>
+				<a href="#">介休家具建材网</a>
+				<a href="#">涛涛三味火锅餐饮有限公司</a>
+				<a href="#">介休鸿宪居装饰公司</a>
+				<a href="#">天狗网络科技自助建站系统</a>
+			</div>
+			<div class="contact">
+				<div class="contact_way">
+					<p><img src="../img/tel.jpg"/><span>客服服务热线</span></p>
+					<h3>03547357121</h3>
+					<h3>13383445351</h3>
+					<img src="../img/realonline.gif"/>
+					<span>(7*24小时服务)</span>
+					<img class="QQ" src="../img/pa.gif"/>
+				</div>
+				<div class="contact_list">
+					<ul>
+						<p><img src="../img/gu0.jpg"/><h3>关于我们</h3></p>					
+						<li><a href="#">货源提供</a></li>
+						<li><a href="#">联系客服</a></li>
+						<li><a href="#">商城简介</a></li>
+					</ul>
+					
+					<ul>
+						<p><img src="../img/gu1.jpg"/><h3>售后服务</h3></p>
+						<li><a href="#">产品退换</a></li>
+						<li><a href="#">订单查询</a></li>
+						<li><a href="#">收货说明</a></li>
+						<li><a href="#">在线旺旺客服</a></li>
+					</ul>
+					
+					<ul>
+						<p><img src="../img/gu2.jpg"/><h3>支付宝</h3></p>
+						<li><a href="#">支付宝</a></li>
+						<li><a href="#">货到付款</a></li>
+						<li><a href="#">银行付款</a></li>
+					</ul>
+					
+					<ul>
+						<p><img src="../img/gu3.jpg"/><h3>购物指南</h3></p>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">用户注册</a></li>
+					</ul>
+					
+					<ul>
+						<p><img src="../img/gu4.jpg"/><h3>配送方式</h3></p>
+						<li><a href="#">运费标准</a></li>
+						<li><a href="#">配送政策</a></li>
+						<li><a href="#">订单说明</a></li>
+					</ul>
+					<ul>
+						<p><img src="../img/wx.jpg"/><h3>手机扫二维码登录</h3></p>
+						<img class="erweima" src="../img/erweima.jpg" />
+					</ul>
+				</div>
+			</div>
+			<div class="tiangou">
+				<p>天狗网络科技有限公司版权所有</p>
+				<p>站长统计</p>
+			</div>
+		</div>
+	</body>
+</html>

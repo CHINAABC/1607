@@ -1,0 +1,24 @@
+.footer{width: 1200px;height: 380px;background: white;margin: 10px 70px;overflow: hidden;}
+
+
+.footer .friend_link{width: 1166px;height: 40px;margin: 15px 10px 20px 10px;border: 2px solid rgb(204,204,204);line-height: 40px;padding-left: 10px;}
+.footer .friend_link h3{display: inline-block;}
+.footer .friend_link a{margin: 0 7px;color: black;}
+
+
+.footer .contact .contact_way{width: 205px;height: 165px;background: rgb(248,248,248);margin: 0 10px;padding: 25px 0 0 35px;float: left;}
+.footer .contact .contact_way p img{display: inline-block;}
+.footer .contact .contact_way h3{margin: 10px 0;color: red;}
+.footer .contact .contact_way span{margin-left:15px;}
+.footer .contact .contact_way .QQ{margin-top: 15px;}
+
+
+.footer .contact .contact_list{width: 885px;height: 165px;background: rgb(248,248,248);float: left;padding-top: 25px;padding-left: 35px;}
+.footer .contact .contact_list ul p img,.footer .contact .contact_list ul p h3{float: left;}
+.footer .contact .contact_list ul{float: left;width: 140px;}
+.footer .contact .contact_list ul li{margin: 10px 0 0 20px;}
+.footer .contact .contact_list ul .erweima{margin: 10px 0 0 30px;}
+
+
+.footer .tiangou{padding-top: 10px;height: 70px;width: 1200px;overflow: hidden;}
+.footer .tiangou p{color: black;text-align: center;margin-top: 10px;}

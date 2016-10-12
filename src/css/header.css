@@ -1,0 +1,42 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, input, fieldset, legend, img ,td ,tr ,table{ margin:0; padding:0; }
+fieldset, img { border:none; }
+img{display: block;}
+caption, th{ font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; } 
+body { color:.000; padding:0; font:12px/20px "微软雅黑"; background:rgb(237,237,237);}
+a { color:black; text-decoration:none; }
+
+
+.top_header{width: 1200px;height: 32px;background: rgb(237,237,237);padding: 0 70px;overflow: hidden;}
+.top_header .hello{line-height: 32px;float: left;}
+.top_header .shop{line-height: 32px;float: right;}
+.top_header .hello a{color: rgb(255,102,0);}
+.top_header .shop a{color: black; }
+.top_header .shop .car_number{color: red;}
+.top_header .shop .top_list{border-right: 1px solid black;padding: 0 9px 0 10px;}
+.top_header .shop #no_border{border-right: none;}
+
+
+.logo{background: white;height: 100px;width: 1200px;padding: 0 70px;overflow: hidden;}
+.logo .logo_img{float: left;margin-top: 15px;}
+.logo .right_search{float: right;margin-top: 15px;width: 670px;padding-right: 40px;}
+.logo .right_search span{padding: 3px 10px;color: white;background: red;border-radius: 3px;}
+.logo .right_search .search_frame img{display: inline-block;height: 28px;float: left;width: 30px;}
+.logo .right_search .search_frame input{border: none;height: 28px;float: left;width: 477px;}
+.logo .right_search .search_frame .sousuo{border: 3px solid red;height: 28px;width: 507px;display: inline-block;}
+.logo .right_search .search_frame .btn{width: 146px;height: 32px;background: black;border-radius: 5px;text-align: center;line-height: 32px;color: white;float: right;font-weight: bold;white-space: pre;}
+.logo .right_search .search_frame a{color: black;}
+
+.nav{width: 1200px;height: 40px;padding: 0 70px;border-top: 3px solid rgb(241,45,46);background: rgb(196,6,9);}
+.nav .allclassify{color: white;width: 120px;height: 40px;background: rgb(148,2,6);text-align: center;line-height: 40px;float: left;}
+.nav .navlist li{float: left;}
+.nav .navlist li a{color: white;display: block;width: 98px;height: 40px;border-left: 1px solid rgb(159,17,19);border-right: 1px solid rgb(213,22,26);text-align: center;line-height: 40px;font-size: 14px;}
+.nav .navlist li a:hover{background: rgb(67,17,19);}
+.nav .right_nav{margin-left: 50px;width: 150px;display: inline-block;}
+.nav .right_nav dt{display: inline-block;margin: 5px;}
+.nav .right_nav .nav_right{color: white;}
+.nav .right_nav .nav_right:hover{color: rgb(255,112,0);text-decoration: underline;}
+
+
+.nav_next{width: 1200px;height: 43px;padding: 0 70px;background: rgb(141,127,126);}
+.nav_next .coler{background: rgb(148,2,6);width: 1200px;height: 43px;}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>列表页</title>
+		<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/listPage.css"/>
+		<script src="../../js/jquery-1.12.0.js"></script>
+		<script src="../js/cookie.js"></script>
+		<script src="../js/listPage.js"></script>
+	</head>
+	<body>
+		<!--文档最顶部   灰色高30像素-->
+		<div class="top_header">
+			<div class="hello">
+				你好：<span id="hallo"></span>,欢迎光临天狗商城！[
+				<a href="langingLoginPage.html">请登录</a>
+				]，新用户？[
+				<a href="langingLoginPage.html">免费注册</a>
+				]
+			</div>
+			<div class="shop">
+				<span class="shoppingcar">
+					<a href="shoppingCartPage.html">购物车<span class="car_number">0</span>件</a>
+				</span>
+				<a class="top_list" href="#">我的订单</a>
+				<a class="top_list" href="#">网站地图</a>
+				<a class="top_list" href="#">帮助中心</a>
+				<a class="top_list" href="#">加入收藏</a>
+				<a class="top_list" id="no_border" href="#">设为首页</a>
+			</div>
+		</div>
+		<!--logo和搜索框栏-->
+		<div class="logo">
+			<a class="logo_img" href="#"><img src="../img/p201401211350199562.jpg"/></a>
+			<div class="right_search">
+				<span>商品</span>
+				<div class="search_frame">
+					<div class="sousuo">
+						<img src="../img/sousuo.jpg"/>
+						<input type="text" value="多搜搜，意外惊喜等你拿" />
+					</div>
+					<input class="btn" type="button" value="搜          索" />
+					<a href="#">手机/</a>
+					<a href="#">钟表/</a>
+					<a href="#">家电/</a>
+					<a href="#">电脑/</a>
+					<a href="#">男装/</a>
+					<a href="#">女装/</a>
+					<a href="#">灯具/</a>
+					<a href="#">童装/</a>
+					<a href="#">儿童玩具/</a>
+					<a href="#">笔记本/</a>
+					<a href="#">平板/</a>
+					<a href="#">相机/</a>
+					<a href="#">鞋</a>
+				</div>
+			</div>
+		</div>
+		<!--导航栏nav-->
+		<div class="nav">
+			<div class="allclassify">所有商品分类</div>
+			<ul class="navlist">
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="listPage.html">手机数码</a></li>
+				<li><a href="listPage.html">礼品箱包</a></li>
+				<li><a href="listPage.html">厨具用品</a></li>
+				<li><a href="listPage.html">电脑办公</a></li>
+				<li><a href="listPage.html">服饰鞋帽</a></li>
+				<li><a href="listPage.html">个护化妆</a></li>
+				<li><a href="listPage.html">母婴用品</a></li>
+			</ul>
+			<dl class="right_nav">
+				<dt><a href="#"><img src="../img/hot_img.jpg"/></a><a class="nav_right" href="#">分销</a></dt>
+				<dt><a href="#"><img src="../img/new_img.jpg"/></a><a class="nav_right" href="#">导航</a></dt>
+				<dt><a href="#"><img src="../img/diy_img.jpg"/></a><a class="nav_right" href="#">团购</a></dt>
+				<dt><a href="#"><img src="../img/go_img.jpg"/></a><a class="nav_right" href="#">充值</a></dt>
+			</dl>
+		</div>
+		<!--导航栏下的深红色填充栏-->
+		<div class="nav_next">
+			<div class="coler"></div>
+		</div>
+		<!--当前位置栏-->
+		<div class="currentPosition">
+			<img src="../img/home.jpg" /><span>首页    ></span><span>搜索</span>
+		</div>
+		<!--商品列表栏-->
+		<div class="bigbox">
+			<!--左边商品畅销、推荐、浏览历史栏-->
+			<div class="leftPage">
+				<div class="topImg">
+					<img src="../img/left_top.jpg" />
+				</div>
+				<div class="recommendList">畅销排行榜</div>
+				<ul>
+					<li class="different">
+						<p class="number">1</p>
+						<a href="#">
+							<img src="../img/minP2016031314422891.jpg"/>
+							<p class="name">三星NOTE5 N9200 白，屏幕尺...</p>
+						</a>
+						<span class="price">￥4270</span>
+					</li>
+					<li class="recommend"><span>2</span><a href="#">三星S6 9208 金，金属边框&玻璃...</a></li>
+					<li class="recommend"><span>3</span><a href="#">三星A7100 女王粉，屏幕尺寸 5...</a></li>
+					<li class="recommend"><span>4</span><a href="#">Apple iPhone 6s Plu...</a></li>
+					<li class="recommend"><span>5</span><a href="#">Meitu/美图 v4 美图手机V4秀...</a></li>
+					<li class="recommend"><span>6</span><a href="#">Meitu/美图 v4 美图手机V4秀...</a></li>
+				</ul>
+				<div class="recommendList">推荐品牌</div>
+				<ul>
+					<li class="iconImg"><a href="#"><img src="../img/p201312061100260276.jpg"/></a></li>
+					<li class="iconImg"><a href="#"><img src="../img/p201401211350199562.jpg"/></a></li>
+					<li class="iconImg"><a href="#"><img src="../img/p201404011334302415.jpg"/></a></li>
+					<li class="iconImg"><a href="#"><img src="../img/p201406071435494008.jpg"/></a></li>
+					<li class="iconImg"><a href="#"><img src="../img/p201603151537553117.jpg"/></a></li>
+					<li class="iconImg"><a href="#"><img src="../img/p201603161259330219.jpg"/></a></li>
+					<li class="iconImg"><a href="#"><img src="../img/p201603212021240460.jpg"/></a></li>
+					<li class="iconImg"><a href="#"><img src="../img/p201603161302213462.jpg"/></a></li>
+				</ul>
+				<div class="lastList">最近浏览的商品<span>清空</span></div>
+				<div class="notes">
+					<p>暂无最近浏览产品！</p>
+				</div>
+			</div>
+			<!--右边商品列表栏-->
+			<div class="rightPage">
+				<!--广告图-->
+				<a href="#"><img class="tImg" src="../img/zmgd888_falsh42.jpg"/></a>
+				
+				<div class="screen">
+					<span>筛选商品</span>					
+					<a href="#">清除筛选条件</a>
+				</div>
+				
+				<div class="brand">
+					<span>品牌:</span>
+					<ul>
+						<li class="about"><a href="#">其他</a></li>
+						<li class="about"><a href="#">李宁</a></li>
+						<li class="about"><a href="#">耐克</a></li>
+						<li class="about"><a href="#">阿迪达斯</a></li>
+						<li class="about"><a href="#">真维斯</a></li>
+						<li class="about"><a href="#">安踏</a></li>
+						<li class="about"><a href="#">恒源祥</a></li>
+						<li class="about"><a href="#">罗宾汉</a></li>
+					</ul>
+					<a href="#"><img src="../img/good1.jpg"/>展开</a>
+				</div>
+				<div class="category">
+					<span>类别:</span>
+					<ul>
+						<li class="about"><a href="#">男装</a></li>
+						<li class="about"><a href="#">女装</a></li>
+						<li class="about"><a href="#">男鞋</a></li>
+						<li class="about"><a href="#">运动</a></li>
+						<li class="about"><a href="#">内衣</a></li>
+						<li class="about"><a href="#">配饰</a></li>
+						<li class="about"><a href="#">女鞋</a></li>
+						<li class="about"><a href="#">童鞋</a></li>
+					</ul>
+					<a href="#"><img src="../img/good1.jpg"/>展开</a>
+				</div>
+			
+				<div class="sortord">
+					<span class="leftGood">排序方式:</span>
+					<ul>
+						<li class="about"><a href="#">默认</a></li>
+						<li class="about"><a href="#">畅销商品</a></li>
+						<li class="about"><a href="#">新品上架</a></li>
+						<li class="about"><a href="#">价格从高到低</a></li>
+						<li class="about"><a href="#">价格从低到高</a></li>
+					<p><span>1</span>/<span>30</span></p>
+				</div>
+			<!--用懒加载：创建空div，用来存放从json文件中取回的东西-->
+				<!--<div class="longList"></div>-->
+				
+					
+				<!--用分页加载：创建空div，用来存放从json文件中取回的东西-->
+				<div id="datalist"></div>
+				<!--创建空div，用来存放页码-->
+				<div id="page"></div>
+				
+			</div>			
+		</div>
+		
+		<!--文档底部-->
+		<div class="footer">
+			<div class="friend_link">
+				<h3>友情链接：</h3>
+				<a href="#">天狗网商城</a>
+				<a href="#">介休市弘盛昌家具建材装饰城</a>
+				<a href="#">天狗网科技有限公司</a>
+				<a href="#">天狗网上商城</a>
+				<a href="#">介休家具建材网</a>
+				<a href="#">涛涛三味火锅餐饮有限公司</a>
+				<a href="#">介休鸿宪居装饰公司</a>
+				<a href="#">天狗网络科技自助建站系统</a>
+			</div>
+			<div class="contact">
+				<div class="contact_way">
+					<p><img src="../img/tel.jpg"/><span>客服服务热线</span></p>
+					<h3>03547357121</h3>
+					<h3>13383445351</h3>
+					<img src="../img/realonline.gif"/>
+					<span>(7*24小时服务)</span>
+					<img class="QQ" src="../img/pa.gif"/>
+				</div>
+				<div class="contact_list">
+					<ul>
+						<p><img src="../img/gu0.jpg"/><h3>关于我们</h3></p>					
+						<li><a href="#">货源提供</a></li>
+						<li><a href="#">联系客服</a></li>
+						<li><a href="#">商城简介</a></li>
+					</ul>
+					
+					<ul>
+						<p><img src="../img/gu1.jpg"/><h3>售后服务</h3></p>
+						<li><a href="#">产品退换</a></li>
+						<li><a href="#">订单查询</a></li>
+						<li><a href="#">收货说明</a></li>
+						<li><a href="#">在线旺旺客服</a></li>
+					</ul>
+					
+					<ul>
+						<p><img src="../img/gu2.jpg"/><h3>支付宝</h3></p>
+						<li><a href="#">支付宝</a></li>
+						<li><a href="#">货到付款</a></li>
+						<li><a href="#">银行付款</a></li>
+					</ul>
+					
+					<ul>
+						<p><img src="../img/gu3.jpg"/><h3>购物指南</h3></p>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">用户注册</a></li>
+					</ul>
+					
+					<ul>
+						<p><img src="../img/gu4.jpg"/><h3>配送方式</h3></p>
+						<li><a href="#">运费标准</a></li>
+						<li><a href="#">配送政策</a></li>
+						<li><a href="#">订单说明</a></li>
+					</ul>
+					<ul>
+						<p><img src="../img/wx.jpg"/><h3>手机扫二维码登录</h3></p>
+						<img class="erweima" src="../img/erweima.jpg" />
+					</ul>
+				</div>
+			</div>
+			<div class="tiangou">
+				<p>天狗网络科技有限公司版权所有</p>
+				<p>站长统计</p>
+			</div>
+		</div>
+	</body>
+</html>

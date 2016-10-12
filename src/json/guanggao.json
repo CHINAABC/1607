@@ -1,0 +1,191 @@
+{
+	"phone":[
+		{
+			"url":"img/midP20160313145249235.jpg",
+			"name":"魅族 MX4 16GB 灰色 移动4G手机",
+			"price":"￥999"
+		},
+		{
+			"url":"img/midP20160313153110796.jpg",
+			"name":"魅族 PRO5 64GB 银白色 移动联通双4G手机 双卡双待",
+			"price":"￥3099"
+		},
+		{
+			"url":"img/midP20160312150857107.jpg",
+			"name":"Huawei/华为 Mate8全网通",
+			"price":"￥3699"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"Huawei/华为 荣耀畅玩5X",
+			"price":"￥1599"
+		},
+		{
+			"url":"img/midP20160313145249235.jpg",
+			"name":"分期免息送16G卡皮套钢化膜 Huawei/华为 荣耀7全网通4G",
+			"price":"￥2469"
+		},
+		{
+			"url":"img/midP20160313153110796.jpg",
+			"name":"Huawei/华为 P8青春版 电信移动 联通 双4G智能手机双",
+			"price":"￥1388"
+		},
+		{
+			"url":"img/midP20160312150857107.jpg",
+			"name":"Huawei/华为 P8标准版双4G手机",
+			"price":"￥2288"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"送32G卡/电源耳机皮套 Huawei/华为 荣耀畅玩4C手机",
+			"price":"￥799"
+		},
+		{
+			"url":"img/midP20160312150857107.jpg",
+			"name":"Huawei/华为 荣耀6 移动联通 4G智能手机",
+			"price":"￥1599"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"索尼（SONY） NEX-F3K 微单单镜套机 粉色（E18-55mm F",
+			"price":"￥3370"
+		}
+	],
+	"computer":[
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"惠普（HP） Envy dv4-5213tx 14.0英寸笔记本 ",
+			"price":"￥4682"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"清华同方（TongFang） 精锐X2-B203 台式电脑 (双核 ",
+			"price":"￥2256"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"苹果（Apple） iPad mini MD545CH/A 7.9英寸平板电脑  ",
+			"price":"￥4969"
+		},{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"惠普（HP） Envy dv4-5213tx 14.0英寸笔记本 ",
+			"price":"￥4682"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"清华同方（TongFang） 精锐X2-B203 台式电脑 (双核 ",
+			"price":"￥2256"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"苹果（Apple） iPad mini MD545CH/A 7.9英寸平板电脑  ",
+			"price":"￥4969"
+		}
+	],
+	"fushi":[
+		{
+			"url":"img/midP20160313145249235.jpg",
+			"name":"4006#热卖人气爆款 夏季时尚简约短袖t恤 男 字母印花",
+			"price":"￥35"
+		},
+		{
+			"url":"img/midP20160313153110796.jpg",
+			"name":"凉鞋超高细跟露趾缎面镶钻金属吊饰",
+			"price":"￥186"
+		},
+		{
+			"url":"img/midP20160312150857107.jpg",
+			"name":"秋装新品 薄款韩版修身显瘦小脚牛仔裤",
+			"price":"￥72"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"韩版新品男款衬衫 格子拼接男士衬衫 修身休闲短袖衬衫",
+			"price":"￥74"
+		},
+		{
+			"url":"img/midP20160313145249235.jpg",
+			"name":"秋冬新款都市休闲时尚毛毛绒男式加厚夹克外套",
+			"price":"￥248"
+		},
+		{
+			"url":"img/midP20160313153110796.jpg",
+			"name":"拖鞋超高细跟露趾缎面串珠蝴蝶结",
+			"price":"￥140"
+		},
+		{
+			"url":"img/midP20160312150857107.jpg",
+			"name":"潮流时尚夏款新品T恤 男士撞色条纹时尚修身休闲短袖P",
+			"price":"￥91"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"新款男士打底衫 休闲男式纯色T恤 时尚男款圆领短袖T恤 ",
+			"price":"￥50"
+		},
+		{
+			"url":"img/midP20160312150857107.jpg",
+			"name":"潮流男款衬衫 男士中袖衬衫 七分男式衬衫 时尚修身休闲",
+			"price":"￥56"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"拖鞋超高细跟宽口缎面豹纹镶钻蝴蝶结",
+			"price":"￥160"
+		}
+	],
+	"huazhuang":[
+		{
+			"url":"img/midP20160312150857107.jpg",
+			"name":"高露洁360健康牙龈牙膏140g双支装送Hello Kitty杯（限",
+			"price":"￥29"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"潘婷Clinicare染烫损伤修护组合优惠装（洗发露267ML+",
+			"price":"￥47"
+		},
+		{
+			"url":"img/midP20160312150857107.jpg",
+			"name":"松下（Panasonic） ES-RC50-S 电动剃须刀",
+			"price":"￥229"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"潘婷丝质顺滑洗发露400ml+精华素200ml",
+			"price":"￥37"
+		}
+		,
+		{
+			"url":"img/midP20160312150857107.jpg",
+			"name":"松下（Panasonic） ES-RC50-S 电动剃须刀",
+			"price":"￥229"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"潘婷丝质顺滑洗发露400ml+精华素200ml",
+			"price":"￥37"
+		}
+		,
+		{
+			"url":"img/midP20160312150857107.jpg",
+			"name":"松下（Panasonic） ES-RC50-S 电动剃须刀",
+			"price":"￥229"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"潘婷丝质顺滑洗发露400ml+精华素200ml",
+			"price":"￥37"
+		},
+		{
+			"url":"img/midP20160312150857107.jpg",
+			"name":"高露洁360健康牙龈牙膏140g双支装送Hello Kitty杯（限",
+			"price":"￥29"
+		},
+		{
+			"url":"img/midP20160312144947839.jpg",
+			"name":"潘婷Clinicare染烫损伤修护组合优惠装（洗发露267ML+",
+			"price":"￥47"
+		}
+	]
+}

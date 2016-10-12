@@ -1,0 +1,31 @@
+/*购物车样式*/
+/*购物车商品信息上面的购物车导航栏*//*结算步骤栏*/
+.shop_car{width: 1200px;overflow: hidden;padding: 20px 190px;}
+.shop_car .my_car{width: 715px;height: 50px;background: white;margin-bottom: 20px;overflow: hidden;margin-left: 115px;}
+.shop_car .my_car img,.shop_car .my_car h2,.shop_car .my_car ul{display: inline-block;}
+.shop_car .my_car h2{font-size: 20px;padding: 8px;overflow: hidden;}
+.shop_car .my_car li{width: 145px;height: 28px;background: rgb(226,226,226);float: left;font-weight: bold;text-align: center;line-height: 28px;margin-right: 20px;}
+.shop_car .my_car .backColor{background: rgb(241,82,0);color: white;}
+
+/*清除购物车和商品总价格总数量栏*/
+.shop_car .car_down{width: 950px;height: 80px;overflow: hidden;background: rgb(242,244,246);}
+.shop_car .car_down input{float: left;margin: 10px;cursor: pointer;}
+.shop_car .car_down .pp{float: right;text-align: right;}
+.shop_car .car_down .pp p{margin: 10px 5px;}
+.shop_car .car_down .pp p span{color: red;}
+
+/*去付款栏*/
+.shop_car .shangjiao{width: 950px;overflow: hidden;margin: 10px;text-align: right;}
+.shop_car .shangjiao img{display: inline-block;cursor: pointer;}
+.shop_car .shangjiao input{width: 120px;height: 30px;background: rgb(254,88,30);color: white;border: 1px solid rgb(254,65,0);border-radius: 5px;margin-left: 10px;cursor: pointer;}
+
+/*购物车中所有商品列表栏*/
+.shop_car .car_list .tab tr{border: 1px solid rgb(213,213,213);width: 948px;overflow: hidden;display: block;}
+.shop_car .car_list .tab .oneCols{border: 1px solid rgb(213,213,213);width: 948px;height: 24px;display: block;}
+.shop_car .car_list .tab tr td{height: 85px;text-align: center;line-height: 24px;}
+.shop_car .car_list .tab .oneCols td{height: 24px;text-align: center;line-height: 24px;border-right: 1px solid rgb(213,213,213);}
+
+
+
+
+
