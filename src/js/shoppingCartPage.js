@@ -58,13 +58,21 @@ $(function(){
 	//设置折后价格
 	$("#discountPrice").html(0.8*totprice);
 	//用一个随机数来给购买商品获得的积分。
-	var inter = parseInt(Math.random()*200+5);
-	$("#integral").html(inter);
+	if(totprice == 0){
+		$("#integral").html("0");
+	}else{
+		var inter = parseInt(Math.random()*200+5);
+		$("#integral").html(inter);
+	}
+	
 	
 	//取到清空购物车按钮，添加点击事件
 	$("#null").on("click",function(){
 		//选中购物车中所有商品，将其删除
-		$("#otab tr").eq(0).siblings("tr").empty();	
+		$("#otab tr").eq(0).siblings("tr").empty();
+		//removecookie("cookie1");//用上面的方法删除商品是不能彻底删除的，刷新后会回来。
+		//如果用removecookie("cookie1");是能删除的，但是当再添加到购物车就不行了，而且查看cookie时，看到两个cookie1，一个有值，一个没值
+		//有值的那个cookie1里面只有你最后加入购物车的值。为啥呢？
 	});
 	//取消订购单个商品。取到 “取消订购” 按钮，添加点击事件
 	$(".removeDoods").on("click",function(){

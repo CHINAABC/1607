@@ -1,15 +1,20 @@
-
+/*当前位置*/
 .currentPosition{margin: 15px 70px;width: 1200px;}
 .currentPosition img{display: inline-block;margin-right: 10px;}
 
-
+/*商品列表页 页面的中间的大盒子*/
 .bigbox{width: 1200px;overflow: hidden;margin: 0 70px;}
+/*左边的热门商品部分*/
 .leftPage{width: 210px;overflow: hidden;background: white;float: left;}
+/*左边顶部的图片*/
 .leftPage .topImg{margin: 10px 0;}
+
 .leftPage .recommendList{width: 210px;height: 32px;color: white;font-size: 14px;line-height: 32px;text-align: center;background: rgb(171,12,6);font-weight: bold;}
+/*最近浏览的商品下的那部分*/
 .leftPage .lastList{width: 210px;height: 32px;color: white;font-size: 14px;line-height: 32px;background: rgb(171,12,6);font-weight: bold;padding-left: 10px;}
 .leftPage .lastList span{font-size: 12px;color: white;line-height: 32px;float: right;margin-right: 20px;cursor: pointer;}
 
+/*畅销排行榜下的部分*/
 .leftPage .different{width: 210px;height: 60px;overflow: hidden;position: relative;border-bottom: 1px solid rgb(230,230,230);}
 .leftPage .different .number{position: absolute;color: red;left: 5px;top: 10px;font-weight: bold;}
 .leftPage .different img{margin-left: 20px;}
@@ -19,20 +24,21 @@
 .leftPage .recommend{width: 210px;height: 40px;line-height: 40px;border-bottom: 1px solid rgb(230,230,230);}
 .leftPage .recommend span{color: red;font-weight: bold;margin: 0 5px;}
 .leftPage ul{margin-bottom: 10px;overflow: hidden;}
-
+/*推荐品牌下的部分*/
 .leftPage .iconImg{float: left;}
 .leftPage .iconImg img{width: 105px;height: 35px;}
 
 .leftPage .notes p{height: 30px;line-height: 30px;margin-left: 10px;}
 
 
-
+/*右边部分*/
 .rightPage{width: 980px;float: right;overflow: hidden;background: white;}
 .rightPage .tImg{width: 980px;height: 300px;margin-bottom: 8px;}
+/*筛选商品那行*/
 .rightPage .screen{width: 976px;height: 32px;border: 2px solid rgb(209,204,199);}
 .rightPage .screen span{float: left;color: rgb(128,111,102);line-height: 32px;margin-left: 10px;}
 .rightPage .screen a{float: right;color: rgb(128,111,102);line-height: 32px;margin-right: 10px;}
-
+/*品牌那行*/
 .rightPage .brand{width: 976px;height: 34px;border: 1px solid rgb(209,204,199);border-top: none;}
 .rightPage .brand span{float: left;color: rgb(128,111,102);line-height: 32px;margin-left: 10px;margin-right: 40px;}
 .rightPage .brand a{float: right;color: rgb(24,89,165);line-height: 32px;margin-right: 10px;border: 1px solid rgb(128,111,102);
@@ -41,7 +47,7 @@ border-radius: 3px;display: block;width: 48px;height: 24px;margin-top: 4px;line-
 .rightPage .brand .about{width: 100px;height: 34px;line-height: 34px;text-align: center;float: left;}
 /*.rightPage .brand ul li a{line-height: 34px;}*/
 .rightPage .brand .about a:hover{background: darkgoldenrod;}
-
+/*类别那行*/
 .rightPage .category{width: 976px;height: 34px;border: 1px solid rgb(209,204,199);border-top: none;}
 .rightPage .category span{float: left;color: rgb(128,111,102);line-height: 32px;margin-left: 10px;margin-right: 40px;}
 .rightPage .category a{float: right;color: rgb(24,89,165);line-height: 32px;margin-right: 10px;border: 1px solid rgb(128,111,102);
@@ -49,31 +55,25 @@ border-radius: 3px;display: block;width: 48px;height: 24px;margin-top: 4px;line-
 .rightPage .category a img{display: inline-block;margin: 0 5px;}
 .rightPage .category .about{width: 100px;height: 34px;line-height: 34px;text-align: center;float: left;}
 .rightPage .category .about a:hover{background: darkgoldenrod;}
-
+/*排序方式那行*/
 .rightPage .sortord{width: 976px;height: 34px;border: 1px solid rgb(209,204,199);margin-top: 10px;background: rgb(250,244,234);}
 .rightPage .sortord .leftGood{float: left;color: rgb(128,111,102);line-height: 32px;margin-left: 10px;}
 .rightPage .sortord p{float: right;line-height: 32px;margin-right: 10px;}
 .rightPage .sortord .about{width: 100px;height: 34px;line-height: 34px;text-align: center;float: left;cursor: pointer;}
 /*.rightPage .sortord .about:hover{background: red;color: white;}*/
 
-
+/*用懒加载时的css*/
 .rightPage .longList{width: 980px;overflow: hidden;border: 1px solid rgb(212,212,212);}
 .rightPage .longList li{width: 170px;height: 330px;margin-top: 20px;margin-left: 18px;float: left;}
 .rightPage .longList li img{width: 168px;height: 228px;border: 1px solid rgb(212,212,212);}
 .rightPage .longList li img:hover{border: 1px solid red;}
 .rightPage .longList li .p1{text-decoration: line-through;color: rgb(204,204,204);margin-bottom: 10px;}
 .rightPage .longList li .p2{color: red;}
-.rightPage .longList li .aLink{display: block;width: 170px;height: 40px;}
+.rightPage .longList li .aLink{display: block;width: 170px;height: 30px;}
 .rightPage .longList li .p3{color: rgb(0,102,204);}
 
 
-
-/*#datalist{border:1px solid #ddd;padding:15px;}
-#datalist li{position:relative;padding:15px 5px;border-bottom:1px dotted #ccc;}
-#datalist li .like,#datalist li .comment{
-	position:absolute;right:20px;top:10px;padding:5px;background-color:#efefef;border-radius:5px;
-}
-#datalist li .like{right:55px;background-color:#fc0;color:#fff;}*/
+/*用分页加载时的css*/
 .rightPage #datalist{width: 980px;overflow: hidden;border: 1px solid rgb(212,212,212);}
 .rightPage #datalist li{width: 170px;height: 330px;margin-top: 20px;margin-left: 18px;float: left;}
 .rightPage #datalist li img{width: 168px;height: 228px;border: 1px solid rgb(212,212,212);}
@@ -82,6 +82,7 @@ border-radius: 3px;display: block;width: 48px;height: 24px;margin-top: 4px;line-
 .rightPage #datalist li .p2{color: red;}
 .rightPage #datalist li .aLink{display: block;width: 170px;height: 30px;}
 .rightPage #datalist li .p3{color: rgb(0,102,204);}
+/*页码部分*/
 #page{width: 980px;overflow: hidden;text-align: center;}
 #page span{display:inline-block;margin:10px 5px;width:40px;line-height:1.8;text-align: center;background-color:#dfdfdf;color:#666;cursor: pointer;}
 #page span.active{background-color:#fc0;color:#fff;}

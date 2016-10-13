@@ -1,5 +1,6 @@
-
+/*登录和注册部分的css*/
 .denglu_zhuce{width: 1200px;padding: 10px 70px;overflow: hidden;}
+/*那两个盒子的宽高*/
 .denglu_zhuce .left_zhuce,.denglu_zhuce .right_denglu{width: 538px;height: 338px;margin: 0 30px;background: white;float: left;border: 1px dashed rgb(200,200,200);}
 .denglu_zhuce .left_zhuce p,.denglu_zhuce .right_denglu p{margin: 20px 40px;font-size: 14px;color: rgb(50,50,50);}
 .denglu_zhuce .left_zhuce p span{color: red;font-size: 12px;}

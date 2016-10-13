@@ -150,6 +150,7 @@ $(function(){
 			Oinput[3].value="";
 			Oinput[4].value="";
 			alert("恭喜你，注册成功啦");
+			return false;
 		}else{
 			onclick = null;
 			ob.innerHTML = "请填写完整的信息";
@@ -178,7 +179,7 @@ $(function(){
  			$.each(nameWord, function(idx,item) {
  				//检测输入的用户名和密码是否与cookies中的用户名和密码一样。
 	 			if(Omygad[0].value == item.username && Omygad[1].value == item.password){	
-	 				Ojump.setAttribute("action","../index.html");
+	 				Ojump.setAttribute("action","../index.html"); 				
 	 				var d = new Date;
 	 				d.setDate(d.getDate() + 365);//cookies存放的时间
 	 				setcookie("halloname",Omygad[0].value,d,"/");//取到刚刚登录的用户名

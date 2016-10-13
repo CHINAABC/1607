@@ -11,6 +11,9 @@ jQuery(function($){
 	if(getcookie("shopCarNum")){
 		$(".car_number").html(getcookie("shopCarNum"));		
 	}
+	
+	$("#PCar").css("cursor","pointer");
+	
 	//实现加入购物车功能    用cookie方法    当点击立即购买或者加入购物车时就设置cookies
 	//购物车中要显示商品的：商品名称、商品的市场价格、商品在本商城价格、数量等
 	var oshop = document.getElementById("shop");//获取（要加点击事件）存放立即购买的盒子

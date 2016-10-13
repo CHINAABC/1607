@@ -1,3 +1,5 @@
+/*文档头部*/
+/*重置样式部分(其实应该写在另一个css页面的)*/
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, input, fieldset, legend, img ,td ,tr ,table{ margin:0; padding:0; }
 fieldset, img { border:none; }
 img{display: block;}
@@ -6,7 +8,7 @@ ul, ol { list-style:none; }
 body { color:.000; padding:0; font:12px/20px "微软雅黑"; background:rgb(237,237,237);}
 a { color:black; text-decoration:none; }
 
-
+/*头部最上面那个灰色部分*/
 .top_header{width: 1200px;height: 32px;background: rgb(237,237,237);padding: 0 70px;overflow: hidden;}
 .top_header .hello{line-height: 32px;float: left;}
 .top_header .shop{line-height: 32px;float: right;}
@@ -16,7 +18,7 @@ a { color:black; text-decoration:none; }
 .top_header .shop .top_list{border-right: 1px solid black;padding: 0 9px 0 10px;}
 .top_header .shop #no_border{border-right: none;}
 
-
+/*放置logo和搜索框部分*/
 .logo{background: white;height: 100px;width: 1200px;padding: 0 70px;overflow: hidden;}
 .logo .logo_img{float: left;margin-top: 15px;}
 .logo .right_search{float: right;margin-top: 15px;width: 670px;padding-right: 40px;}
@@ -26,7 +28,7 @@ a { color:black; text-decoration:none; }
 .logo .right_search .search_frame .sousuo{border: 3px solid red;height: 28px;width: 507px;display: inline-block;}
 .logo .right_search .search_frame .btn{width: 146px;height: 32px;background: black;border-radius: 5px;text-align: center;line-height: 32px;color: white;float: right;font-weight: bold;white-space: pre;}
 .logo .right_search .search_frame a{color: black;}
-
+/*导航栏部分*/
 .nav{width: 1200px;height: 40px;padding: 0 70px;border-top: 3px solid rgb(241,45,46);background: rgb(196,6,9);}
 .nav .allclassify{color: white;width: 120px;height: 40px;background: rgb(148,2,6);text-align: center;line-height: 40px;float: left;}
 .nav .navlist li{float: left;}
@@ -37,6 +39,6 @@ a { color:black; text-decoration:none; }
 .nav .right_nav .nav_right{color: white;}
 .nav .right_nav .nav_right:hover{color: rgb(255,112,0);text-decoration: underline;}
 
-
+/*导航栏下那条没有文字部分*/
 .nav_next{width: 1200px;height: 43px;padding: 0 70px;background: rgb(141,127,126);}
 .nav_next .coler{background: rgb(148,2,6);width: 1200px;height: 43px;}

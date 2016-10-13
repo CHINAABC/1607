@@ -1,15 +1,20 @@
+/*可用sass优化,但还不太会,所以没用...*/
+/*首页css部分*/
 
+/*包含轮播图的大盒子*/
 .carousel{height: 462px;width: 1200px;padding: 0 70px;position: relative;}
+/*轮播图部分*/
 .carousel .back_img{position: absolute;}
 .carousel .back_img li{position: absolute;height: 500px;width: 1200px;}
 .carousel .back_img li img{width: 100%;height: 100%;}
+/*轮播图的页码部分*/
 .carousel .page{position:absolute;right:600px;bottom:5px;padding:10px;}
 .carousel .page span{display:inline-block;margin:0 5px;width:24px;height:24px;line-height:24px;background-color:#efefef;text-align:center;border-radius:50%;box-shadow:0 0 10px #000;cursor: pointer;}
 .carousel .page span.active{background-color:#f90;color:#fff;}
-
+/*右边的那三个广告图部分*/
 .carousel .back_img_right{position: absolute;right: 80px;top: 30px;z-index: 1;}
 .carousel .back_img_right li{margin-top: 10px;}
-
+/*左边的所有商品列表部分*/
 .carousel .biglist{position: absolute;left: 70px;top: -30px;}
 .carousel .biglist .list{width: 125px;height: 33px;border-top: 1px solid rgb(167,48,51);border-bottom: 1px solid rgb(136,1,1);background: rgb(148,2,6);
 padding-left: 10px;position: relative;cursor: pointer;z-index: 1;}
@@ -17,7 +22,7 @@ padding-left: 10px;position: relative;cursor: pointer;z-index: 1;}
 .carousel .biglist .list .fuck{top: 10px;}
 .carousel .biglist #nobian{border-top: none;}
 .carousel .biglist .list span{color: white;font-size: 14px;padding:0 20px 0 30px ;width: 60px;height: 33px;line-height: 33px;display: inline-block;overflow: hidden;}
-
+/*左边的所有商品列表部分 中的隐藏起来的二级菜单部分*/
 .carousel .biglist .list .small_list{position: absolute;width: 560px;background: white;border: 3px solid rgb(227,0,29);padding: 15px;left: 135px;top: -40px;overflow: hidden;}
 .carousel .biglist .list .small_list h2{font-size: 14px;}
 .carousel .biglist .list .small_list .left_list{width: 395px;float: left;}
@@ -27,70 +32,79 @@ padding-left: 10px;position: relative;cursor: pointer;z-index: 1;}
 .carousel .biglist .list .small_list .left_list ul li{float: left;}
 .carousel .biglist .list .small_list .left_list ul li a{color: rgb(64,64,64);padding: 5px 10px;}
 .carousel .biglist .list .small_list .left_list ul li a:hover{color: red;}
-
+/*隐藏起来的二级菜单部分的右边那部分*/
 .carousel .biglist .list .small_list .right_list{width: 140px;padding-left: 25px;float: right;}
 .carousel .biglist .list .small_list .right_list a{display: inline-block;width: 68px;height: 20px;line-height: 20px;}
 .carousel .biglist .list .small_list .right_list a:hover{color: red;}
-
+/*轮播图下面的推荐商标部分*/
 .friend{height: 150px;width: 1200px;margin: 0 70px;position: relative;background: white;margin-top: 5px;}
 .friend ul li{float: left;width: 110px;height: 70px;margin: 40px 15px;border: 1px solid .ddd;}
 .friend ul li img{width: 100%;height: 100%;}
 .friend a span{position: absolute;right: 10px;top: 10px;color: black;}
 
-
+/*秒杀的那部分*/  
 .near{width: 1200px;height: 330px;margin-top: 15px;overflow: hidden;padding: 0 70px;}
 .near .left_tj{width: 848px;height: 320px;border: rgb(231,231,232) solid 1px;float: left;background: white;padding: 5px 10px;}
 .near .right_tj{width: 300px;height: 330px;border: rgb(231,231,232) solid 1px;float: right;background: white;}
+/*顶部的列表*/
 .near .left_tj .miaosha{border-bottom: 2px rgb(187,0,0) solid;overflow: hidden;}
 .near .left_tj .miaosha li{float: left;color: black;font-size: 18px;border-left: 1px solid #666;font-weight: bold;width: 120px;height: 35px;text-align: center;line-height: 36px;cursor: pointer;}
 .near .left_tj .miaosha .guanggao{background: rgb(187,0,0);color: white;}
-
+/*下面的商品列表*/
 .near .left_tj .neirong{overflow: hidden;}
 .near .left_tj .neirong dl{float: left;width: 210px;}
 .near .left_tj .neirong dl dt a{display: block;width: 210px;height: 160px;margin: 10px 0;}
 .near .left_tj .neirong dl p span{color: red;}
-
+/*右边的那两张图*/
 .near .right_tj a{display: block;width: 300px;height: 320px;}
 .near .right_tj a img{width: 100%;height: 50%;}
 
-
+/*会员促销那部分*/
 #one{height: 385px;}
 .member{width: 1180px;height: 545px;margin: 15px 70px;background: white;padding: 0 10px;overflow: hidden;}
+/*设置会员促销及以下的几个大部分的头部的左边*/
 .member .top_mem{border-bottom: 1px solid red;overflow: hidden;margin-bottom: 10px;}
 .member .top_mem .left_mem{width: 235px;height: 42px;border-bottom: 3px solid red;float: left;}
 .member .top_mem .left_mem h2{font-size: 17px;display: inline-block;line-height: 42px;margin-left: 5px;}
 .member .top_mem .left_mem span{font-size: 10px;line-height: 42px;color: #666;}
 
+/*促销部分中的那堆图片部分*/
 #one .chuxiao{overflow: hidden;}
 #one .chuxiao a{display: block;width: 236px;height: 330px;float: left;}
 #one .chuxiao a img{width: 100%;height: 100%;}
 #one .chuxiao .double img{width: 100%;height: 50%;}
 #one .chuxiao a img:hover{opacity: 0.7;}
-
+/*设置会员促销以下的几个大部分的头部的右边文字列表部分*/
 .member .top_mem .right_mem{float: right;height: 42px;overflow: hidden;}
 .member .top_mem .right_mem li{float: left;padding: 0 10px;border-right: 1px solid rgb(136,136,136);color: rgb(136,136,136);margin-top: 20px;}
 .member .top_mem .right_mem li a:hover{color: red;}
 
+/*设置会员促销以下的几个大部分的左边的轮播图*/
 .member .moveImgx{position: relative;float: left;}
 .member .moveImgx ul li{position: absolute;}
 
-
+/*厨具用品和电脑办公两个部分*/
 .temember{width: 1200px;height: 715px;margin: 15px 70px;overflow: hidden;}
 .temember .member1,.temember .member2{width: 570px;height: 695px;background: white;padding: 10px;}
+/*厨具用品部分*/
 .temember .member1{float: left;}
+/*电脑办公部分*/
 .temember .member2{float: right;}
+/*厨具用品和电脑办公两个部分的头部*/
 .temember .member1 .top_mem,.temember .member2 .top_mem{border-bottom: 1px solid red;overflow: hidden;margin-bottom: 10px;}
+/*厨具用品和电脑办公两个部分的头部的左边部分*/
 .temember .member1 .top_mem .left_mem,.temember .member2 .top_mem .left_mem{width: 235px;height: 42px;border-bottom: 3px solid red;float: left;}
 .temember .member1 .top_mem .left_mem h2,.temember .member2 .top_mem .left_mem h2{font-size: 17px;display: inline-block;line-height: 42px;margin-left: 5px;}
 .temember .member1 .top_mem .left_mem span,.temember .member2 .top_mem .left_mem span{font-size: 10px;line-height: 42px;color: #666;}
+/*厨具用品和电脑办公两个部分的头部的右边部分*/
 .temember .member1 .top_mem .right_mem,.temember .member2 .top_mem .right_mem{float: right;height: 42px;overflow: hidden;}
 .temember .member1 .top_mem .right_mem li,.temember .member2 .top_mem .right_mem li{float: left;padding: 0 10px;color: rgb(136,136,136);margin-top: 20px;}
 .temember .member1 .top_mem .right_mem li a:hover,.temember .member2 .top_mem .right_mem li a:hover{color: red;}
-
+/*厨具用品和电脑办公两个部分的轮播图部分*/
 .temember .member1 .moveImg,.temember .member2 .moveImg{position: relative;margin-left: 5px;}
 .temember .member1 .moveImg li,.temember .member2 .moveImg li{position: absolute;}
 
-
+/*厨具用品、电脑办公、服饰鞋帽等的内容部分*/
 #right_blist{float: right;width: 900px;overflow: hidden;}
 #right_blist ul li{float: left;width: 168px;height: 226px;padding: 5px;}
 #right_blist ul li dd{text-align: center;width: 168px;height: 40px;}
@@ -100,10 +114,10 @@ padding-left: 10px;position: relative;cursor: pointer;z-index: 1;}
 #right_blist2 ul li{float: left;width: 168px;height: 226px;padding: 5px;}
 #right_blist2 ul li dd{text-align: center;width: 168px;height: 40px;}
 #right_blist2 ul li span{color: red;font-weight: bold;margin-left: 50px;}
-
+/*长的广告图*/
 .long_img{width: 1200px;height:92px;margin: 15px 70px;}
 
-
+/*热门商品分类部分*/
 .hot_list{width: 1180px;height: 400px;margin: 15px 70px;background: white;padding: 0 10px;overflow: hidden;}
 .hot_list h2{text-align: center;line-height: 38px;}
 .hot_list .lei_list li{width: 108px;height: 168px;border: 1px solid rgb(225,225,225);float: left;margin: 5px 8px 5px 0;}
