@@ -16,14 +16,15 @@
 .carousel .back_img_right li{margin-top: 10px;}
 /*左边的所有商品列表部分*/
 .carousel .biglist{position: absolute;left: 70px;top: -30px;}
-.carousel .biglist .list{width: 125px;height: 33px;border-top: 1px solid rgb(167,48,51);border-bottom: 1px solid rgb(136,1,1);background: rgb(148,2,6);
+.carousel .biglist .list{width: 129px;height: 33px;border-top: 1px solid rgb(167,48,51);border-bottom: 1px solid rgb(136,1,1);background: rgb(148,2,6);
 padding-left: 10px;position: relative;cursor: pointer;z-index: 1;}
+.carousel .biglist .list:hover{z-index: 2;}
 .carousel .biglist .list img{display: inline-block;position: absolute;top: 6px;}
 .carousel .biglist .list .fuck{top: 10px;}
 .carousel .biglist #nobian{border-top: none;}
 .carousel .biglist .list span{color: white;font-size: 14px;padding:0 20px 0 30px ;width: 60px;height: 33px;line-height: 33px;display: inline-block;overflow: hidden;}
 /*左边的所有商品列表部分 中的隐藏起来的二级菜单部分*/
-.carousel .biglist .list .small_list{position: absolute;width: 560px;background: white;border: 3px solid rgb(227,0,29);padding: 15px;left: 135px;top: -40px;overflow: hidden;}
+.carousel .biglist .list .small_list{position: absolute;width: 560px;background: white;border: 3px solid rgb(227,0,29);padding: 15px;left: 135px;top: -40px;overflow: hidden;z-index: 1;}
 .carousel .biglist .list .small_list h2{font-size: 14px;}
 .carousel .biglist .list .small_list .left_list{width: 395px;float: left;}
 .carousel .biglist .list .small_list .left_list ul{border-bottom: dotted 1px #666;width: 395px;overflow: hidden;}

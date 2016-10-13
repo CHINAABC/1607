@@ -1,4 +1,6 @@
 $(function(){
+
+	
 	//利用cookies，在文档最顶部的”你好“，后面显示用户名
 	var sayhallo = getcookie("halloname");
 	if(sayhallo){
@@ -8,7 +10,10 @@ $(function(){
 	if(getcookie("shopCarNum")){
 		$(".car_number").html(getcookie("shopCarNum"));		
 	}
-	
+	//当有人登陆时，把之前“请登录”改为退出
+	if($("#hallo").html()){
+		$("#change").html("退出！");
+	}	
 	//调用轮播图插件，给导航栏下的大广告图添加轮播效果
 	$('.bosscarousel').xcarousel({
 		type:'fade',//轮播方式为透明度
@@ -35,7 +40,7 @@ $(function(){
 	//取到导航栏下的轮播图的左边的所有商品分类的列表，给其添加mouseenter事件
 	$(".carousel").children(".biglist").children(".list").on("mouseenter",function(){
 		//当鼠标移进li时，给这个li改变样式
-		$(this).css({"background":"white","border":"3px solid rgb(227,0,29)","border-right":"none"});
+		$(this).css({"background":"white","border":"3px solid rgb(227,0,29)","border-right":"3px solid white","z-index":"2"});
 		//把对应的li中的字体改成红色
 		$(this).children("span").css("color","rgb(148,2,6)");
 		//让二级菜单显示

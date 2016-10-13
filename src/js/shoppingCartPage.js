@@ -1,4 +1,5 @@
 $(function(){
+
 	//利用cookies，在文档最顶部的”你好“，后面显示用户名
 	var sayhallo;
 	if(getcookie("halloname")){
@@ -6,7 +7,11 @@ $(function(){
 	}
 
 	var shopCarNum = 0;//存放购物车总数量的变量
-	
+	//当有人登陆时，把之前“请登录”改为退出
+	if($("#hallo").html()){
+		$("#change").html("退出！");
+	}
+		
 	
 	//获取cookies
 	//用table表格列出购物车中的商品

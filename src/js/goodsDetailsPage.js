@@ -1,4 +1,5 @@
 jQuery(function($){
+
 	//选中要放大镜功能的div 调用放大镜插件
 	$('#fdImg').xzoom({position:"right"});
 	
@@ -11,7 +12,11 @@ jQuery(function($){
 	if(getcookie("shopCarNum")){
 		$(".car_number").html(getcookie("shopCarNum"));		
 	}
-	
+	//当有人登陆时，把之前“请登录”改为退出
+	if($("#hallo").html()){
+		$("#change").html("退出！");
+	}
+		
 	$("#PCar").css("cursor","pointer");
 	
 	//实现加入购物车功能    用cookie方法    当点击立即购买或者加入购物车时就设置cookies

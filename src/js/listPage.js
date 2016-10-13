@@ -1,4 +1,5 @@
 $(function(){
+
 	//利用cookies，在文档最顶部的”你好“，后面显示用户名
 		var sayhallo = getcookie("halloname");
 		if(sayhallo){
@@ -8,7 +9,11 @@ $(function(){
 	if(getcookie("shopCarNum")){
 		$(".car_number").html(getcookie("shopCarNum"));		
 	}
-
+	//当有人登陆时，把之前“请登录”改为退出
+	if($("#hallo").html()){
+		$("#change").html("退出！")
+	}
+	
 		//1/懒加载
 		
 		var $ul = $("<ul/>");

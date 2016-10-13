@@ -1,5 +1,6 @@
 
 $(function(){
+
 	//利用cookies，在文档最顶部的”你好“，后面显示用户名
 	var sayhallo;
 	if(getcookie("halloname")){
@@ -9,7 +10,11 @@ $(function(){
 	if(getcookie("shopCarNum")){
 		$(".car_number").html(getcookie("shopCarNum"));		
 	}
-	
+	//当有人登陆时，把之前“请登录”改为退出
+	if($("#hallo").html()){
+		$("#change").html("退出！");
+	}
+		
 	//登录页 、 注册页
 	//同样利用cookies，将注册时的用户名和密码等信息存到cookies中，
 	//在登陆时：拿输入的用户名和密码和cookies中的用户名和密码相比较相同则可以登录。
@@ -171,6 +176,12 @@ $(function(){
 	//登录页
  	//给 “我要登陆” 按钮添加点击事件
  	Omygad[2].onclick = function(){
+ 		//当用户名为空时
+ 		if(!Omygad[0].value){
+ 			alert("用户名不能为空！");
+ 			return false;
+ 		}	
+ 		var err = true; 
  		//判断是否有注册用户在cookie2中
  		if(getcookie("cookie2")){
  			//如果存在cookie2,那么就获取cookies，用JSON.parse将其转成对象数组
@@ -178,25 +189,19 @@ $(function(){
  			//遍历
  			$.each(nameWord, function(idx,item) {
  				//检测输入的用户名和密码是否与cookies中的用户名和密码一样。
-	 			if(Omygad[0].value == item.username && Omygad[1].value == item.password){	
+	 			if(Omygad[0].value == item.username && Omygad[1].value == item.password){
+	 				err = false;
 	 				Ojump.setAttribute("action","../index.html"); 				
 	 				var d = new Date;
 	 				d.setDate(d.getDate() + 365);//cookies存放的时间
 	 				setcookie("halloname",Omygad[0].value,d,"/");//取到刚刚登录的用户名
 		 			return false;
-				}else if(Omygad[0].value != item.username){
-					//当用户名不一样时
-					alert("该用户名不存在");	
-					return false;
-				}else if(Omygad[1].value != item.password){
-					//当密码不一样时
-					alert("密码不正确");			
-					return false;
-				}
+				}	
  			});
- 		}else{
- 			alert("请先注册用户，谢谢");
- 			return false;
- 		}
+			if(err){
+				//当用户名或密码不一样时
+				alert("用户名、密码不正确");
+			}			
+ 		}	
  	}
 });
